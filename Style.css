@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+}
+
+.sekce {
+    margin-top: 100vh;
+    top: 20;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ff0000;
+}
+
+.hero video {
+    width: 100%;
+    top: -11vh;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#ImageHero {
+    width: 100%;
+    top: -11vh;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#ImageSekce {
+    width: 100%;
+    top: -1vh;
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.hero h2 {
+    position: absolute;
+    z-index:   2;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out
+}
+
+h2 {
+    font-size: 8rem;
+    margin-top: 350px;
+}
+
+h1 {
+    position: absolute;
+    z-index:   2;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
+    color: white;
+}
+
+
+html, body {
+    overflow: hidden;
+  }
+
+
+  
+
+/* Add animation for fade-in class */
+.fade-in {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  
+  /* Define animation for fade-in class */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Hide the scrollbar */
+::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+
+
+.intro {
+    height: 100vh;
+  }
+
+.intro video {
+    height: 100%;
+    width: 1000%;
+    object-fit: cover;
+}
+
+.intro h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18rem;
+}
+
+.Scrollhero {
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 1, 1);
+    font-family: 'Roboto', sans-serif;
+}
+
+.ScrollHero h3{
+    padding-top: 300px;
+    text-align: center;
+    font-size: 18rem;
+}
+
+.container {
+    position: relative;
+    height: 10vh; /* make the container tall enough to allow for scrolling */
+  }
+  
+  .text.hidden {
+    opacity: 0;
+  }
+  
+  .scroll-indicator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+  }
